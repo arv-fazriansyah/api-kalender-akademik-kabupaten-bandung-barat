@@ -1,0 +1,28 @@
+{
+  "sumber": {
+    "halaman": "https://disdikkbb.org/",
+    "api": "https://disdikkbb.org/wp-json/wp/v2/posts"
+  },
+  "diambil_pada": "2026-11-13T13:59:11Z",
+  "jumlah": 2,
+  "tahun_ajaran": [
+    {
+      "slug": "2026-2027",
+      "tahun_ajaran": "2026/2027",
+      "status": "tersedia",
+      "file": "data/2026-2027.json",
+      "jumlah_agenda": 11,
+      "jumlah_dokumen": 1,
+      "pembaruan_terakhir": "2026-07-05T11:07:59Z"
+    },
+    {
+      "slug": "2025-2026",
+      "tahun_ajaran": "2025/2026",
+      "status": "tersedia",
+      "file": "data/2025-2026.json",
+      "jumlah_agenda": 4,
+      "jumlah_dokumen": 1,
+      "pembaruan_terakhir": "2025-07-26T07:10:55Z"
+    }
+  ]
+}
