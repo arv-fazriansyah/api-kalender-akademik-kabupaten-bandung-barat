@@ -1,37 +1,58 @@
 {
   "sumber": {
     "halaman": "https://disdikkbb.org/",
-    "api": "https://disdikkbb.org/wp-json/wp/v2/posts"
+    "api": "https://disdikkbb.org/wp-json/wp/v2/posts?search=kalender%20pendidikan&per_page=10"
   },
-  "diambil_pada": "2026-11-13T14:15:26Z",
-  "jumlah": 3,
-  "tahun_ajaran": [
+  "diambil_pada": "2026-11-13T14:27:51Z",
+  "jumlah": 8,
+  "postingan": [
     {
-      "slug": "2026-2027",
-      "tahun_ajaran": "2026/2027",
-      "status": "tersedia",
-      "file": "data/2026-2027.json",
-      "jumlah_agenda": 11,
-      "jumlah_dokumen": 1,
-      "pembaruan_terakhir": "2026-07-05T11:07:59Z"
+      "slug": "disdik-kbb-terbitkan-kalender-pendidikan-tahun-pelajaran-2026-2027",
+      "judul": "Disdik KBB Terbitkan Kalender Pendidikan Tahun Pelajaran 2026/2027",
+      "file": "data/disdik-kbb-terbitkan-kalender-pendidikan-tahun-pelajaran-2026-2027.json",
+      "pembaruan_terakhir": "2026-07-05T11:07:59"
     },
     {
-      "slug": "2025-2026",
-      "tahun_ajaran": "2025/2026",
-      "status": "tersedia",
-      "file": "data/2025-2026.json",
-      "jumlah_agenda": 4,
-      "jumlah_dokumen": 1,
-      "pembaruan_terakhir": "2025-07-26T07:10:55Z"
+      "slug": "unjuk-kompetensi-publik-speaking-siswa-dalam-kegiatan-expo-kokurikuler",
+      "judul": "Unjuk Kompetensi Publik Speaking Siswa dalam Kegiatan Expo Kokurikuler",
+      "file": "data/unjuk-kompetensi-publik-speaking-siswa-dalam-kegiatan-expo-kokurikuler.json",
+      "pembaruan_terakhir": "2026-07-04T12:11:39"
     },
     {
-      "slug": "2024-2025",
-      "tahun_ajaran": "2024/2025",
-      "status": "tersedia",
-      "file": "data/2024-2025.json",
-      "jumlah_agenda": 23,
-      "jumlah_dokumen": 1,
-      "pembaruan_terakhir": "2024-08-08T06:39:09Z"
+      "slug": "jawa-barat-tetapkan-pedoman-dan-kalender-pendidikan-tahun-ajaran-2026-2027",
+      "judul": "Jawa Barat Tetapkan Pedoman dan Kalender Pendidikan Tahun Ajaran 2026/2027",
+      "file": "data/jawa-barat-tetapkan-pedoman-dan-kalender-pendidikan-tahun-ajaran-2026-2027.json",
+      "pembaruan_terakhir": "2026-06-24T22:07:54"
+    },
+    {
+      "slug": "mendikdasmen-terbitkan-se-libur-nataru-2025-2026-fokus-pada-keamanan-murid-dan-aktivitas-keluarga",
+      "judul": "Mendikdasmen Terbitkan SE Libur Nataru 2025/2026: Fokus pada Keamanan Murid dan Aktivitas Keluarga",
+      "file": "data/mendikdasmen-terbitkan-se-libur-nataru-2025-2026-fokus-pada-keamanan-murid-dan-aktivitas-keluarga.json",
+      "pembaruan_terakhir": "2025-11-29T06:00:16"
+    },
+    {
+      "slug": "kalender-pendidikan-tahun-pelajaran-2025-2026",
+      "judul": "Kalender Pendidikan Tahun Pelajaran 2025/2026",
+      "file": "data/kalender-pendidikan-tahun-pelajaran-2025-2026.json",
+      "pembaruan_terakhir": "2025-07-26T07:10:55"
+    },
+    {
+      "slug": "hijrah-sebuah-refleksi",
+      "judul": "HIJRAH, SEBUAH REFLEKSI",
+      "file": "data/hijrah-sebuah-refleksi.json",
+      "pembaruan_terakhir": "2024-07-20T14:47:05"
+    },
+    {
+      "slug": "pahami-langkah-penyusunan-kosp",
+      "judul": "Pahami Langkah Penyusunan KOSP !",
+      "file": "data/pahami-langkah-penyusunan-kosp.json",
+      "pembaruan_terakhir": "2024-07-26T21:53:29"
+    },
+    {
+      "slug": "kalender-pendidikan-disdik-kab-bandung-barat-tahun-pelajaran-2024-2025",
+      "judul": "KALENDER PENDIDIKAN DISDIK KAB. BANDUNG BARAT TAHUN PELAJARAN 2024/2025",
+      "file": "data/kalender-pendidikan-disdik-kab-bandung-barat-tahun-pelajaran-2024-2025.json",
+      "pembaruan_terakhir": "2024-08-08T06:39:09"
     }
   ]
 }
