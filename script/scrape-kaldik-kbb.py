@@ -34,9 +34,17 @@ def generate_api():
         date = post.get("date", "")
         slug = post.get("slug", "")
         
-        # Ekstrak tahun ajaran dari judul/slug (misal: 2026-2027)
-        # Jika tidak ditemukan, gunakan slug atau tanggal post
-        tahun_ajaran_slug = slug
+        # Filter: Hanya ambil jika judul mengandung pola tahun (misal: 2024/2025 atau 2026-2027)
+        import re
+        if not re.search(r'\d{4}', title):
+            continue
+            
+        # Ekstrak tahun ajaran sederhana untuk nama file (misal: 2026-2027)
+        year_match = re.search(r'(\d{4})[/-](\d{4})', title)
+        if year_match:
+            year_slug = f"{year_match.group(1)}-{year_match.group(2)}"
+        else:
+            year_slug = slug
         
         item_data = {
             "id": post.get("id"),
@@ -53,15 +61,15 @@ def generate_api():
             "diambil_pada": waktu_sekarang
         }
         
-        # Simpan file detail JSON per postingan
-        file_path = os.path.join(DATA_DIR, f"{slug}.json")
+        # Simpan file detail JSON per postingan dengan nama tahun yang rapi
+        file_path = os.path.join(DATA_DIR, f"{year_slug}.json")
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(item_data, f, ensure_ascii=False, indent=2)
             
         tahun_ajaran_list.append({
-            "slug": slug,
+            "slug": year_slug,
             "judul": title,
-            "file": f"data/{slug}.json",
+            "file": f"data/{year_slug}.json",
             "pembaruan_terakhir": post.get("modified")
         })
         
