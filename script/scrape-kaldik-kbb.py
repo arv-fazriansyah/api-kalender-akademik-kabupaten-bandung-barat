@@ -3,14 +3,13 @@ import os
 from datetime import datetime
 import requests
 
-# Konfigurasi Direktori
 DATA_DIR = "data"
 AGENDA_DIR = os.path.join(DATA_DIR, "agenda")
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(AGENDA_DIR, exist_ok=True)
 
-# Data Kurasi Agenda & Dokumen Kaldik Kabupaten Bandung Barat (KBB)
-# Sesuai data resmi dari disdikkbb.org
+# Data lengkap Kalender Pendidikan Kabupaten Bandung Barat (KBB)
+# Termasuk 2026/2027, 2025/2026, dan 2024/2025
 KBB_DATA = {
     "2026-2027": {
         "tahun_ajaran": "2026/2027",
@@ -178,23 +177,227 @@ KBB_DATA = {
         "catatan": [
             "Disusun berdasarkan pedoman Dinas Pendidikan Provinsi Jawa Barat dan Edaran Disdik KBB."
         ]
+    },
+    "2024-2025": {
+        "tahun_ajaran": "2024/2025",
+        "slug": "2024-2025",
+        "status": "tersedia",
+        "sumber": {
+            "halaman": "https://disdikkbb.org/kalender-pendidikan-disdik-kab-bandung-barat-tahun-pelajaran-2024-2025/",
+            "api": "https://disdikkbb.org/wp-json/wp/v2/posts?search=kalender%20pendidikan",
+            "pembaruan_terakhir": "2024-08-08T06:39:09Z",
+            "dibuat": "2024-07-14T20:17:51Z"
+        },
+        "dokumen": [
+            {
+                "halaman": "https://disdikkbb.org/kalender-pendidikan-disdik-kab-bandung-barat-tahun-pelajaran-2024-2025/",
+                "url": "http://disdikkbb.org/wp-content/uploads/2024/07/KALDIK-KBB-FIX-2024-2025.pdf"
+            }
+        ],
+        "agenda": [
+            {
+                "semester": 1,
+                "mulai": "2024-07-15",
+                "selesai": "2024-07-15",
+                "kategori": "kegiatan",
+                "agenda": "Hari pertama masuk sekolah",
+                "catatan": ""
+            },
+            {
+                "semester": 1,
+                "mulai": "2024-07-15",
+                "selesai": "2024-07-20",
+                "kategori": "kegiatan",
+                "agenda": "Masa Pengenalan Lingkungan Sekolah (MPLS)",
+                "catatan": ""
+            },
+            {
+                "semester": 1,
+                "mulai": "2024-07-07",
+                "selesai": "2024-07-07",
+                "kategori": "libur",
+                "agenda": "Libur Tahun Baru Islam 1446 H",
+                "catatan": ""
+            },
+            {
+                "semester": 1,
+                "mulai": "2024-08-14",
+                "selesai": "2024-08-14",
+                "kategori": "peringatan",
+                "agenda": "Hari Pramuka dan Pertemuan Pramuka Pendidikan Khusus",
+                "catatan": ""
+            },
+            {
+                "semester": 1,
+                "mulai": "2024-08-17",
+                "selesai": "2024-08-17",
+                "kategori": "libur",
+                "agenda": "Libur hari Proklamasi Kemerdekaan RI",
+                "catatan": ""
+            },
+            {
+                "semester": 1,
+                "mulai": "2024-09-09",
+                "selesai": "2024-09-12",
+                "kategori": "asesmen",
+                "agenda": "Pelaksanaan Asesmen Nasional SMP dan Sederajat",
+                "catatan": ""
+            },
+            {
+                "semester": 1,
+                "mulai": "2024-09-16",
+                "selesai": "2024-09-16",
+                "kategori": "libur",
+                "agenda": "Libur Maulid Nabi Muhammad SAW",
+                "catatan": ""
+            },
+            {
+                "semester": 1,
+                "mulai": "2024-10-28",
+                "selesai": "2024-10-31",
+                "kategori": "asesmen",
+                "agenda": "Pelaksanaan Asesmen Nasional SD dan sederajat Tahap I",
+                "catatan": ""
+            },
+            {
+                "semester": 1,
+                "mulai": "2024-11-25",
+                "selesai": "2024-11-25",
+                "kategori": "peringatan",
+                "agenda": "Hari Guru Nasional",
+                "catatan": ""
+            },
+            {
+                "semester": 1,
+                "mulai": "2024-12-02",
+                "selesai": "2024-12-14",
+                "kategori": "asesmen",
+                "agenda": "Penilaian sumatif akhir semester 1",
+                "catatan": ""
+            },
+            {
+                "semester": 1,
+                "mulai": "2024-12-20",
+                "selesai": "2024-12-21",
+                "kategori": "rapor",
+                "agenda": "Penetapan dan Pembagian rapor semester 1",
+                "catatan": ""
+            },
+            {
+                "semester": 1,
+                "mulai": "2024-12-25",
+                "selesai": "2024-12-26",
+                "kategori": "libur",
+                "agenda": "Libur dan Cuti Bersama Hari Natal",
+                "catatan": ""
+            },
+            {
+                "semester": 1,
+                "mulai": "2024-12-23",
+                "selesai": "2025-01-04",
+                "kategori": "libur",
+                "agenda": "Libur semester 1",
+                "catatan": ""
+            },
+            {
+                "semester": 2,
+                "mulai": "2025-01-01",
+                "selesai": "2025-01-01",
+                "kategori": "libur",
+                "agenda": "Libur Tahun Baru Masehi",
+                "catatan": ""
+            },
+            {
+                "semester": 2,
+                "mulai": "2025-01-06",
+                "selesai": "2025-01-06",
+                "kategori": "kegiatan",
+                "agenda": "Hari pertama masuk sekolah semester 2",
+                "catatan": ""
+            },
+            {
+                "semester": 2,
+                "mulai": "2025-01-27",
+                "selesai": "2025-01-29",
+                "kategori": "libur",
+                "agenda": "Prakiraan libur Isra Mi'raj & Tahun Baru Imlek",
+                "catatan": ""
+            },
+            {
+                "semester": 2,
+                "mulai": "2025-02-28",
+                "selesai": "2025-03-02",
+                "kategori": "libur",
+                "agenda": "Prakiraan libur awal Ramadan 1446 H",
+                "catatan": ""
+            },
+            {
+                "semester": 2,
+                "mulai": "2025-04-01",
+                "selesai": "2025-04-02",
+                "kategori": "libur",
+                "agenda": "Prakiraan Hari Raya Idulfitri 1446 H",
+                "catatan": ""
+            },
+            {
+                "semester": 2,
+                "mulai": "2025-05-01",
+                "selesai": "2025-05-01",
+                "kategori": "libur",
+                "agenda": "Libur Hari Buruh",
+                "catatan": ""
+            },
+            {
+                "semester": 2,
+                "mulai": "2025-05-12",
+                "selesai": "2025-05-12",
+                "kategori": "libur",
+                "agenda": "Libur Hari Raya Waisak",
+                "catatan": ""
+            },
+            {
+                "semester": 2,
+                "mulai": "2025-06-01",
+                "selesai": "2025-06-01",
+                "kategori": "libur",
+                "agenda": "Libur Hari Lahir Pancasila",
+                "catatan": ""
+            },
+            {
+                "semester": 2,
+                "mulai": "2025-06-26",
+                "selesai": "2025-06-27",
+                "kategori": "rapor",
+                "agenda": "Penetapan dan Pembagian rapor semester 2",
+                "catatan": ""
+            },
+            {
+                "semester": 2,
+                "mulai": "2025-06-30",
+                "selesai": "2025-07-12",
+                "kategori": "libur",
+                "agenda": "Libur Akhir Tahun Pelajaran",
+                "catatan": ""
+            }
+        ],
+        "penilaian_akhir": [],
+        "catatan": [
+            "Untuk tanggal penetapan rapor siswa akhir jenjang adalah pada tanggal dilaksanakan rapat penentuan kelulusan."
+        ]
     }
 }
 
 def generate_api():
     waktu_sekarang = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
-    
     tahun_ajaran_list = []
     
     for slug, data in KBB_DATA.items():
-        # Simpan file detail per tahun ajaran
         file_path = os.path.join(DATA_DIR, f"{slug}.json")
         data["diambil_pada"] = waktu_sekarang
         
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
             
-        # Tambahkan ke indeks kalender.json
         tahun_ajaran_list.append({
             "slug": data["slug"],
             "tahun_ajaran": data["tahun_ajaran"],
@@ -205,7 +408,6 @@ def generate_api():
             "pembaruan_terakhir": data["sumber"]["pembaruan_terakhir"]
         })
         
-    # Buat indeks kalender.json
     indeks_data = {
         "sumber": {
             "halaman": "https://disdikkbb.org/",
@@ -220,7 +422,7 @@ def generate_api():
     with open(indeks_path, "w", encoding="utf-8") as f:
         json.dump(indeks_data, f, ensure_ascii=False, indent=2)
         
-    print(f"Berhasil menghasilkan file JSON API Kalender Pendidikan KBB di folder '{DATA_DIR}/'.")
+    print(f"Berhasil memperbarui data API lengkap di folder '{DATA_DIR}/'.")
 
 if __name__ == "__main__":
     generate_api()

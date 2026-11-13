@@ -3,8 +3,8 @@
     "halaman": "https://disdikkbb.org/",
     "api": "https://disdikkbb.org/wp-json/wp/v2/posts"
   },
-  "diambil_pada": "2026-11-13T13:59:11Z",
-  "jumlah": 2,
+  "diambil_pada": "2026-11-13T14:15:26Z",
+  "jumlah": 3,
   "tahun_ajaran": [
     {
       "slug": "2026-2027",
@@ -23,6 +23,15 @@
       "jumlah_agenda": 4,
       "jumlah_dokumen": 1,
       "pembaruan_terakhir": "2025-07-26T07:10:55Z"
+    },
+    {
+      "slug": "2024-2025",
+      "tahun_ajaran": "2024/2025",
+      "status": "tersedia",
+      "file": "data/2024-2025.json",
+      "jumlah_agenda": 23,
+      "jumlah_dokumen": 1,
+      "pembaruan_terakhir": "2024-08-08T06:39:09Z"
     }
   ]
 }
